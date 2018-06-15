@@ -110,6 +110,7 @@ There are two ways to use internationalized strings inside your components, `<Fo
 
 ```js
 import React from 'react';
+import { FormattedMessage } from 'meteor/vulcan:i18n';
 
 const MyComponent = () => 
   <div>
@@ -121,6 +122,7 @@ It also takes variables as the `values` prop:
 
 ```js
 import React from 'react';
+import { FormattedMessage } from 'meteor/vulcan:i18n';
 import { addStrings } from 'meteor/vulcan:core';
 
 addStrings('en', {
@@ -137,6 +139,7 @@ And a `defaultValue` prop as a fallback:
 
 ```js
 import React from 'react';
+import { FormattedMessage } from 'meteor/vulcan:i18n';
 import { addStrings } from 'meteor/vulcan:core';
 
 addStrings('en', {
@@ -153,6 +156,7 @@ Finally, you can also pass `html={true}` to evaluate the entire string as HTML:
 
 ```js
 import React from 'react';
+import { FormattedMessage } from 'meteor/vulcan:i18n';
 import { addStrings } from 'meteor/vulcan:core';
 
 addStrings('en', {
